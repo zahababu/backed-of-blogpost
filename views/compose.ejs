@@ -1,0 +1,16 @@
+<%-include("header")-%>
+    <h1>compose!</h1>
+
+    <form action="/compose" method="post">
+        <div class="form-group">
+            <h3>title</h3>
+            <input type="text" name="title">
+            <br>
+            <h3>post</h3>
+            <textarea class="form-control" name="text" id="ma" cols="30" rows="10"></textarea>
+            <br>
+            <button type="submit">publish</button>
+        </div>
+    </form>
+    <%=addbs%>
+        <%-include("footer")-%>

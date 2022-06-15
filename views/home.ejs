@@ -1,0 +1,17 @@
+<%-include("header")-%>
+    <h1>home!</h1>
+    <p>
+        <%=content%>
+    </p>
+
+    <%post.forEach((posts)=>{%>
+        <h1>
+            <%=posts.pub.substring(0,100)+"..."%>
+        </h1>
+        <p>
+            <%=posts.balls.substring(0,100)+"..."%>
+                <a href="/post/<%=posts.pub%>">read more</a>
+        </p>
+
+        <% })%>
+            <%-include("footer")-%>
